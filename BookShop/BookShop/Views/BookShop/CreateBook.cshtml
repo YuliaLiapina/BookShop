@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "CreateBook";
+}
+<h2>Create book</h2>
+
+<div style = @*"color:blueviolet"*@ class="row">
+    <form method="post">
+        <lable>
+            Book name
+        </lable>
+        <p>
+            <input type="text" name="Name" />
+        </p>
+        <lable>
+            Writer First name
+        </lable>
+        <p>
+            <input type="text" name="FirstName" />
+        </p>
+        <lable>
+            Writer Last name
+        </lable>
+        <p>
+            <input type="text" name="LastName" />
+        </p>
+        <label for="Categories">Choose a category</label>
+        <select class="form-control" id="Id" name="CategoryName">
+                    <option disabled>Choose a category</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="FairyTale">Fairy tale</option>
+                    <option value="Novel">Novel</option>
+                    <option value="Memoirs">Memoirs</option>
+                </select>
+                <button type="submit" value="Add">Save</button>
+            </form>
+        </div>
+
+
+        
+       
+

@@ -1,0 +1,42 @@
+﻿@model BusinessLayer.ModelsDTO.BookDTO
+@{
+    ViewBag.Title = "BookDetails";
+}
+
+<h2>Book Details</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Book Name
+            </th>       
+            <th>
+                Writer
+            </th>
+            <th>
+                Book Category
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+
+                    @foreach (var writer in Model.Writers)
+                    {
+                        <td>
+                            @writer.FirstName
+                            @writer.LastName
+                        </td>
+                    }
+                            <td>@Model.Category.CategoryName</td>
+        </tr>
+    </tbody>
+</table>
+
+
